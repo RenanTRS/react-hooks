@@ -14,10 +14,11 @@ function App() {
   const dataForm = (props: dataFormProps) => {
     console.log(props)
   }
+
   return (
     <Container component="article" maxWidth="sm">
       <Typography variant="h3" component="h1" align="center">Formulário de cadastro</Typography>
-      <Form dataChange={dataForm}/>
+      <Form dataChange={dataForm} />
     </Container>
   )
 }
