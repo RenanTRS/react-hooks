@@ -1,20 +1,16 @@
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button'
-
+import {TextField, Button, Switch, FormControlLabel} from '@mui/material'
 export const Form = () => {
     return (
         <form>
-            <TextField id='name' label='Nome' variant='outlined' fullWidth/>
+            <TextField id='name' label='Nome' variant='outlined' margin="normal" fullWidth/>
 
-            <TextField id='lastname' label='Sobrenome' variant='outlined' fullWidth/>
+            <TextField id='lastname' label='Sobrenome' variant='outlined' margin="normal" fullWidth/>
             
-            <TextField id='cpf' label='CPF' variant='outlined' fullWidth/>
+            <TextField id='cpf' label='CPF' variant='outlined' margin="normal" fullWidth/>
 
-            <label htmlFor="">Promoções</label>
-            <input type="checkbox" />
-
-            <label htmlFor="">Novidades</label>
-            <input type="checkbox" />
+            <FormControlLabel label="Promoções" control={<Switch name="Promoções" defaultChecked />} />
+            <FormControlLabel label="Novidades" control={<Switch name="Novidades" defaultChecked />} />
+            
 
             <Button variant='contained' type="submit">Cadastrar</Button>
         </form>
