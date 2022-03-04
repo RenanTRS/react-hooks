@@ -1,15 +1,14 @@
+import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button'
+
 export const Form = () => {
     return (
         <form>
-            <label htmlFor="">Nome</label>
-            <input type="text" />
+            <TextField id='name' label='Nome' variant='outlined' fullWidth/>
 
-            <label htmlFor="">Sobrenome</label>
-            <input type="text" />
-
-            <label htmlFor="">CPF</label>
-            <input type="text" />
+            <TextField id='lastname' label='Sobrenome' variant='outlined' fullWidth/>
+            
+            <TextField id='cpf' label='CPF' variant='outlined' fullWidth/>
 
             <label htmlFor="">Promoções</label>
             <input type="checkbox" />
